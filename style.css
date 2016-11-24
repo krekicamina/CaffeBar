@@ -27,7 +27,6 @@
 	display: block;
 	width: 100%;
 	height: 280px;
-	
 }
 
 ul li {
@@ -46,7 +45,7 @@ ul li {
 	color:#7F3C05;
 }
 
-.header >li{
+.header >li {
 	font-size:30px;
 	display:inline-block;
 	float:left;
@@ -57,8 +56,13 @@ img {
 	max-width:100%;
 	height:auto;
 }
-li a:hover, .active{
-	
+li a:hover {
+	font-weight:bolder;
+	font-size: 30px;
+	color:#7F3C05;
+	text-decoration: underline;
+}
+.active{
 	font-weight:bolder;
 	font-size: 30px;
 	color:#7F3C05;
@@ -172,9 +176,11 @@ body {
 	background-color:inherit;
 }
 
+ul.header li.ikonica{
+	display:none;
+	}
 
-
-@media only screen and (max-width: 830px){
+@media only screen and (max-width: 882px){
     .kolona.jedan {
         width: 100%;
 		float: none;
@@ -192,62 +198,85 @@ body {
 		float:none;
 	}
 	.kolona{
-	background-color: #E2DD91;
-	opacity: 0.99;
-	margin-right:0%;
-	margin-left:0%;
-	display: inline-block; /*Omogućava da se kolone prikažu bez da se float mora clearovati poslije*/
-	float: left;
-	min-height: 20px;
-	padding:10px;
-	text-align: center;
-	font-family: verdana, sans-serif;
+		background-color: #E2DD91;
+		opacity: 0.99;
+		margin-right:0%;
+		margin-left:0%;
+		display: inline-block; /*Omogućava da se kolone prikažu bez da se float mora clearovati poslije*/
+		float: left;
+		min-height: 20px;
+		padding:10px;
+		text-align: center;
+		font-family: verdana, sans-serif;
 	}
 	#cjenik1{
 		width:96%;
 	}
 	#pozadina {
-	width: 100%;
-	max-height: 400px;
-	height: auto;
-	background-size: cover;
+		width: 100%;
+		max-height: 400px;
+		height: auto;
+		background-size: cover;
+		position:relative;
 	}
-	
-	
 	#form-div{
-	left: 3%;
-	margin-top:3%;
-	margin-right: 3%;
-	width: 88%;
-	margin-left: 0;
-	padding-left: 3%;
-	padding-right: 3%;
-	}
-	
-	ul li{
-		width:100%;
-		line-height: 0px;
+		left: 3%;
+		margin-top:3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 	.active{
 		color:#7F3C05;
 		font-weight:bolder;
 		text-decoration: underline;
 	}
-	.header{
-		background-image:none;
-	}
 	#footer{
-	width: 100%;
-    height: 100%;
+		width: 100%;
+		height: 100%;
 	}
-	
 	#anketa{
-	width:100%;
-	height:100%;
+		width:100%;
+		height:100%;
 	}
+	 /*spirala 2*/
 	
+	ul.header li.ikonica{
+		text-align:right;
+		margin-top:0%;
+		margin-left:0%;
+		display:inline-block;
+	}
+	ul.header li:not(:last-child) {
+		display: none;
+	}
 }
 
+@media only screen and (max-width: 882px){
+	ul.header.responsive{
+		position:relative;
+	}
+	ul.header.responsive li{
+		float:none;
+		margin-right:0;
+		display:block;
+	}
+	ul.header.responsive li a{ 
+		display:inline-block;
+	}
+	ul.header.responsive li.ikonica{ 
+		position:absolute;
+		text-align:right;
+		right:0;
+		top:0;	
+	}
+	ul li{
+		width:100%;
+		line-height:19px;
+	}
+}
 
 .clearfix:after {
     content: "";
@@ -291,14 +320,15 @@ body {
 	background-repeat: no-repeat;
 }
 
-#email, #email2{
+#Test1, #Test2, #Test3{
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#poruka{
+
+#Test4{
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
@@ -372,7 +402,7 @@ textarea {
 	font-weight:700;
 }
 
-#ime, #email, #email2, #poruka{
+#ime, #email, #email2, #Test4, #Test1, #Test2, #Test3{
 	color:#3c3c3c;
 	font-family: verdana, sans-serif;
 	font-weight:500;
@@ -385,4 +415,96 @@ textarea {
 	width:100%;
 	box-sizing: border-box;
 	border: 3px solid rgba(0,0,0,0);
+}
+
+/*spirala2*/
+#halloween1, #halloween4, #halloween2, #halloween3, #halloween5, #halloween0, #party6, #party7{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#halloween0:hover {opacity: 0.7;}
+#halloween1:hover {opacity: 0.7;}
+#halloween4:hover {opacity: 0.7;}
+#halloween2:hover {opacity: 0.7;}
+#halloween3:hover {opacity: 0.7;}
+#halloween5:hover {opacity: 0.7;}
+#party6:hover {opacity: 0.7;}
+#party7:hover {opacity: 0.7;}
+
+/*validacija*/
+.err,.suc{
+	display:none;
+}
+
+.err { color: red;}
+.suc { color: green;}
+
+
+/*carousel*/
+.mySlides {display:none;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 60%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 700px) {
+  .prev, .next{font-size: 12px}
 }

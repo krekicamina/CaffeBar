@@ -4,34 +4,56 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
+		<script type="text/javascript" src="kod.js"></script>
 		<title>Caffe Bar</title>
 	  
 	</head>
 	
 	<body>
+	<script type="text/javascript" src="kod.js"></script>
 		<div class="red" id="pozadina">
-			<ul class="header">
+			<ul class="header" id="mytopnav">
 				<li><a class="podstranica" href="pocetna.html">O nama</a> </li>
 				<li><a class="podstranica" href="aktuelno.html">Aktuelno</a> </li>
-				<li><a class="active" href="ponuda.html">Ponuda</a> </li>
+				<li><a class="active" href="ponuda.html">Ponuda</a></li>
 				<li><a class="podstranica" href="galerija.html">Galerija</a></li>	        
 				<li><a class="podstranica" href="kontakt.html">Kontakt</a></li>
+				<li class="ikonica">
+					<a href="javascript:void(0);" style="font-size:70px;" onclick="dropDownFunkcija()">☰</a>
+				</li>
 			</ul>
 		</div>
 		
 		<p class="quote">“I'm a traditionalist, so for me, black coffee is cool." </p> 
-	
-		<div class="red" >
-			<div class="kolona dva" style="background-color:inherit">
-				<img src="specijalnaponuda.jpg" alt="specijalna" style="height:450px">
-			</div>
-			<div class="kolona dva" style="background-color:inherit">
-				<img src="cjenik.jpg" alt="cjenik" style="height:450px">
-			</div>
+		
+<div class="red" id="carousel">	
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<img src="carousel1.jpg">
 		</div>
-		
-		
-		
+
+		<div class="mySlides fade">
+			<img src="carousel2.jpg">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="carousel3.jpg">
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+</div>
+
 		<div class="clearfix"></div>
 		
 		<div class="red" id="footer">
@@ -49,8 +71,9 @@
 				<h3>Kontakt</h3>
 				<p>	Mob: +38733815401 <br>
 				Fiksni: +387603108108<br>
-				 </p>
+				</p>
 			</div>
 		</div>
+		<script type="text/javascript" src="kod.js"></script>
 	</body>  
 </html>

@@ -9,13 +9,17 @@
 	</head>
 	
 	<body>
+	<script type="text/javascript" src="pocetnaKod.js"></script>
 		<div class="red" id="pozadina">
-			<ul class="header">
+			<ul class="header" id="mytopnav">
 				<li><a class="active" href="pocetna.html">O nama</a> </li>
 				<li><a class="podstranica" href="aktuelno.html">Aktuelno</a> </li>
 				<li><a class="podstranica" href="ponuda.html">Ponuda</a> </li>
 				<li><a class="podstranica" href="galerija.html">Galerija</a></li>	        
 				<li><a class="podstranica" href="kontakt.html">Kontakt</a></li>
+				<li class="ikonica">
+					<a href="javascript:void(0);" style="font-size:70px;" onclick="dropDownFunkcija()">☰</a>
+				</li>
 			</ul>
 		</div>
 		
@@ -42,11 +46,13 @@
 				<div class="kolona dva">
 					Prijavite se i budite uvijek obaviješteni o novostima:<br><br>
 					<form class="forma">
-						<p class="email">
-							<input name="email" type="text" placeholder="E-mail" id="email2"/>
-						</p> <br> 
+						<input name="email" type="text" placeholder="E-mail" id="Test2" onblur="validateEmail('Test2')"/>
+						<span id="Test2Error" class="err">Unesite ispravan e-mail!</span>
+						<span id="Test2Success" class="suc">E-mail ispravan ✓</span>
+						</p>
+						<br> 
 						<div class="submit">
-							<input type="submit" value="Prijavi se!" id="prijavise"/>
+							<input type="submit" value="Prijavi se!" id="prijavise" onclick="return SimulateSubmit1()"/>
 						</div> <br>
 					</form>
 				</div>
@@ -67,8 +73,8 @@
 			</div>
 			<div class="kolona jedan">
 				<h3>Kontakt</h3>
-				<p>	Mob: +38733815401 <br>
-				Fiksni: +387603108108<br>
+				<p>	📱 Mob: +387603108108<br>
+				☎ Fiksni: +38733815401<br>
 				 </p>
 			</div>
 		</div>

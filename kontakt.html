@@ -4,39 +4,51 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
+		<script type="text/javascript" src="kod.js"></script>
 		<title>Caffe Bar</title>
-	  
 	</head>
 	
 	<body>
+	<script type="text/javascript" src="kontaktKod.js"></script>
 		<div class="red" id="pozadina">
-			<ul class="header">
+			<ul class="header" id="mytopnav">
 				<li><a class="podstranica" href="pocetna.html">O nama</a> </li>
 				<li><a class="podstranica" href="aktuelno.html">Aktuelno</a> </li>
-				<li><a class="podstranica" href="ponuda.html">Ponuda</a> </li>
+				<li><a class="podstranica" href="ponuda.html">Ponuda</a> </li> 
 				<li><a class="podstranica" href="galerija.html">Galerija</a></li>	        
 				<li><a class="active" href="kontakt.html">Kontakt</a></li>
+				<li class="ikonica">
+					<a href="javascript:void(0);" style="font-size:70px;" onclick="dropDownFunkcija()">☰</a>
+				</li>
 			</ul>
 		</div>
-		
+
 		<h2><br>Vaša pitanja, eventualne sugestije i prijedloge za saradnju možete nam uputiti putem slijedećeg web kontakt formulara:<br><br></h2>
 		<div class="red" id="forma-main">
 			<div class="kolona dva" id="forma-div">
-				<form class="forma">
+				<form class="forma" id="formaId">
 					<p class="ime">
-						<input name="ime" type="text" placeholder="Ime" id="ime"/>
+						<input name="ime" type="text" placeholder="Ime" id="Test3" onblur="validateName('Test3')"/>
+						<span id="Test3Error" class="err">Unesite ispravno ime!</span>
+						<span id="Test3Success" class="suc">Ime ispravno ✓</span>
 					</p>
-					
+					<p id="upozorenjeIme"></p>
+					<script type="text/javascript" src="kod.js"></script>
 					<p class="email">
-						<input name="email" type="text" placeholder="E-mail" id="email"/>
+						<input name="email" type="text" placeholder="E-mail" id="Test1" onblur="validateEmail('Test1')"/>
+						<span id="Test1Error" class="err">Unesite ispravan e-mail!</span>
+						<span id="Test1Success" class="suc">E-mail ispravan ✓</span>
 					</p>
-					
 					<p class="poruka">
-						<textarea name="poruka" type="text" placeholder="Poruka" id="poruka"></textarea>
+						<textarea name="poruka" type="text" placeholder="Poruka" id="Test4" onblur="validateMessage('Test4')"></textarea>
+						<span id="Test4Error" class="err">Unesite poruku!</span>
+						<span id="Test4Success" class="suc">Poruka ispravna ✓</span>
 					</p>
+					<script type="text/javascript" src="kod.js"></script>
 					<div class="submit">
-						<input type="submit" value="Pošalji" id="posalji1"/>
+						<input type="submit" value="Pošalji" id="posalji1" onclick="return SimulateSubmit()"/>
 					</div>
+					<script type="text/javascript" src="kod.js"></script>
 					<div class="ease"></div>
 				</form>
 			</div>
@@ -70,5 +82,6 @@
 				 </p>
 			</div>
 		</div>
+
 	</body>  
 </html>
