@@ -6,7 +6,7 @@ Amina Krekić 16632
 
 SPIRALA 3
 
-1. Šta je urađeno?
+1.Šta je urađeno?
 
 Upotrebom PHP-a urađena je serijalizacija svih podataka u XML fajlove. Za serijalizaciju podataka iz forme za kontakt korišten je DOMDocument, te su svi podaci koji se unesu u formu kontakt odmah spremljeni u kontakt.xml. Za rad sa XML-om prilikom serijalizacije forme za newsletter korišten je SimpleXML, te su svi podaci koji se unesu u formu newsletter odmah smješteni u folder newsletteri, kao pojedinačni XML fajlovi. 
 Sadržaj stranice se može čitati i bez obavezne prijave (logina). U XML fajlu u folderu users sačuvana su dva korisnika, amina i korisnik. Amina kao admin, ima mogućnost unosa, izmjene, prikazivanja i brisanja stavki iz cjenovnika koje se nalaze na podstranici ponuda.php. Svaka stavka u tabeli je označena nekim posebnim brojem koji je jedinstven za svaku stavku, čisto zbog jednostavnosti izmjene. Sve stavke su serijalizovane u XML fajlove (koristeći SimpleXML) i nalaze se u folderu cjenovnik, a spremljene su pod nazivom jedinstvenibroj.xml. U foldere users, newsletteri i cjenovnik, ubačen je .htaccess file koji onemogućava čitanje sadržaja tih foldera. Passwordi za korisnika i admina su kodirani pomoću md5 funkcije. 
@@ -16,23 +16,24 @@ Admin na podstranici pocetna.php, ima mogućnost da downloaduje izvještaj koji 
 Napravljena je opcija pretrage podataka sa prijedlozima. Dok korisnik (logovani ili ne-svejedno), upisuje vrijednost pretrage, prikazuje mu se do deset najsličnijih stavki iz tabele cjenovnik.  Nakon klika na dugme traži, ispisuju se sve stavke iz cjenovnika koje sadrže uneseni tekst. Podaci koji se pretražuju su iz XML fajlova iz foldera cjenovnik.
 
 login podaci: 
-admin ----> username: amina
+admin ----> username: amina  ;
 		password:amina123
-korisnik ----> username: korisnik
+korisnik ----> username: korisnik  ;
 		password:korisnik123
-2. Šta nije urađeno?
+		
+2.Šta nije urađeno?
 
 Nije urađen deployment (još uvijek).
 
-3. Bugovi koje ste primjetili, ali niste stigli ispraviti, a znate rješenja (opis rješenja)?
+3.Bugovi koje ste primjetili, ali niste stigli ispraviti, a znate rješenja (opis rješenja)?
 
 Prilikom testiranja svake stranice na mom laptopu, bugove nisam primjetila.
 
-4. Bugovi koje ste primjetili, ali ne znate rješenje?
+4.Bugovi koje ste primjetili, ali ne znate rješenje?
 
 Prilikom testiranja svake stranice na mom laptopu, bugove nisam primjetila.
 
-5. Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi.
+5.Lista fajlova u formatu NAZIVFAJLA - Opis u vidu jedne rečenice šta se u fajlu nalazi.
 
 U spirali 3 na github su postavljeni i stari .html fajlovi i još neki fajlovi koji su zapravo bespotrebni, tako da vas molim da ih ignorišete. Pri pokretanju stranice treba krenuti od pocetna.php.
 pocetna.php - Početna stranica koja sadrži osnovne informacije o CaffeBar-u, sliku lokacije, formu za prijavu za newsletter, login formu. Ukoliko je logovan admin, na ovoj stranici mu se nalaze dugmad za download podataka u obliku .csv i .pdf fajlova.
