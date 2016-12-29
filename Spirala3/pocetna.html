@@ -22,8 +22,25 @@
 				</li>
 			</ul>
 		</div>
-		
-		<p class="quote">“As long as there was coffee in the world, how bad could things be?” </p> 
+		<p class="quote">“As long as there was coffee in the world, how bad could things be?” </p>
+		<div class="red">
+			<div class="kolona dva" id="kolonalogin">
+				<form id="login">
+					<img src="login-icon.png" alt="login" id="loginIcon">
+					<input type="text" id="username" placeholder="Username">
+					<input type="text" id="password" placeholder="Password">
+					<input type="submit" id="dugmelogin" value="Log in">
+				</form>
+			</div>
+			<div class="kolona dva" id="kolonapretraga">
+				<form id="pretraga">
+					<img src="search-icon.png" alt="search" id="searchIcon">
+					<input type="text" id="unostrazi" placeholder="Traži..." onkeyup="prikazi(this.value)">
+					<input type="submit" id="dugmetrazi" value="Traži">
+					<div id="prikazpretrage"></div>
+				</form>
+			</div>
+		</div>
 		<div class="red">
 		<div class="kolona cetri">
 			Caffe Bar je nezaobilazno mjesto vrhunskog užitka i ugođaja za svakog slučajnog i namjernog posjetioca. Mi smo tu da Vam pružimo najkvalitetniju uslugu 

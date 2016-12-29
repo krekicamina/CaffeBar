@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,11 +15,11 @@
 	<script type="text/javascript" src="kod.js"></script>
 		<div class="red" id="pozadina">
 			<ul class="header" id="mytopnav">
-				<li><a class="podstranica" href="pocetna.html">O nama</a> </li>
-				<li><a class="podstranica" href="aktuelno.html">Aktuelno</a> </li>
-				<li><a class="podstranica" href="ponuda.html" onclick="showSlides('1')">Ponuda</a> </li>
-				<li><a class="active" href="galerija.html">Galerija</a></li>	        
-				<li><a class="podstranica" href="kontakt.html">Kontakt</a></li>
+				<li><a class="podstranica" href="pocetna.php">O nama</a> </li>
+				<li><a class="podstranica" href="aktuelno.php">Aktuelno</a> </li>
+				<li><a class="podstranica" href="ponuda.php" onclick="showSlides('1')">Ponuda</a> </li>
+				<li><a class="active" href="galerija.php">Galerija</a></li>	        
+				<li><a class="podstranica" href="kontakt.php">Kontakt</a></li>
 				<li class="ikonica">
 					<a href="javascript:void(0);" style="font-size:70px;" onclick="dropDownFunkcija()">☰</a>
 				</li>
@@ -97,7 +100,7 @@
 			</div>
 			<div class="kolona jedan">
 				<h3>Kontakt</h3>
-				<p>	Mob: +38733815401 <br>
+				<p>📱 Mob: +387603108108<br>
 				Fiksni: +387603108108<br>
 				 </p>
 			</div>

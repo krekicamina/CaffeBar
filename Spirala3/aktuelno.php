@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,11 +16,11 @@
 	<script type="text/javascript" src="kod.js"></script>
 		<div class="red" id="pozadina">
 			<ul class="header" id="mytopnav">
-				<li><a class="podstranica" href="pocetna.html">O nama</a> </li>
-				<li><a class="active" href="aktuelno.html">Aktuelno</a> </li>
-				<li><a class="podstranica" href="ponuda.html">Ponuda</a> </li> 
-				<li><a class="podstranica" href="galerija.html">Galerija</a></li>	        
-				<li><a class="podstranica" href="kontakt.html">Kontakt</a></li>
+				<li><a class="podstranica" href="pocetna.php">O nama</a> </li>
+				<li><a class="active" href="aktuelno.php">Aktuelno</a> </li>
+				<li><a class="podstranica" href="ponuda.php">Ponuda</a> </li> 
+				<li><a class="podstranica" href="galerija.php">Galerija</a></li>	        
+				<li><a class="podstranica" href="kontakt.php">Kontakt</a></li>
 				<li class="ikonica">
 					<a href="javascript:void(0);" style="font-size:70px;" onclick="dropDownFunkcija()">☰</a>
 				</li>
@@ -57,21 +60,8 @@
 				</div>
 			</div>
 			<div class="kolona jedan" >
-				<h4>Ocijenite našu ovosedmičnu ponudu?</h4>
-				<form>
-					<input type="radio" name="anketa" value="1" checked> 5<br>
-					<input type="radio" name="anketa" value="2"> 4<br>
-					<input type="radio" name="anketa" value="3"> 3<br>
-					<input type="radio" name="anketa" value="4"> 2<br>
-					<input type="radio" name="anketa" value="5"> 1<br><br>
-					<div class="submit">
-							<input type="submit" value="Glasaj!" id="glasaj"/>
-					</div>
-					<div class="submit">
-							<input type="submit" value="Rezultati" id="rezultati"/>
-					</div><br>
-	
-				</form>
+				<h4>Posebna ponuda:</h4>
+				<img src="specijalnaponuda.jpg" alt="ponuda" id="specijalnaponuda">
 			</div>
 
 		</div>
@@ -89,8 +79,8 @@
 			</div>
 			<div class="kolona jedan">
 				<h3>Kontakt</h3>
-				<p>	Mob: +38733815401 <br>
-				Fiksni: +387603108108<br>
+				<p>	📱 Mob: +387603108108<br>
+				☎ Fiksni: +38733815401<br>
 				 </p>
 			</div>
 		</div>

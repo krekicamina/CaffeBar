@@ -161,7 +161,7 @@ h2{
 }
 
 body {
-	background-color: inherit;
+	
 	background-position: center;
 	background-color: #7F3C05;
 	background-repeat: no-repeat;
@@ -508,3 +508,117 @@ textarea {
 @media only screen and (max-width: 700px) {
   .prev, .next{font-size: 12px}
 }
+/*spirala3*/
+
+#prikazpretrage{
+	background-color:#E2DD91;
+	width:65%;
+	margin-left:8.5%;
+	text-align:left;
+	font-size:14px;
+}
+
+#kolonapretraga, #kolonalogin, #tabela{
+	background-color:#7F3C05;
+	padding-right:0;
+	color:black;
+}
+#username, #password1{
+	padding:8px 15px;
+	border:3px solid #E2DD91;
+	font-family: verdana, sans-serif;
+	font-size:14px;
+	width:65%;
+	height:35px;
+
+}
+#dugmelogin, #dugmelogout{
+	position:relative;
+	padding:8px 15px;
+	border: 3px solid #E2DD91;
+	color:black;
+	background-color:white;
+	font-family: verdana, sans-serif;
+	width: 23%;
+	cursor:pointer;
+	float:right;
+	font-size:14px;
+	height:35px;
+}
+#unostrazi{
+	margin-top:2%;
+	padding:8px 15px;
+	border:3px solid #E2DD91;
+	width:65%;
+	font-family: verdana, sans-serif;
+	font-size:14px;
+	height:35px;
+}
+#dugmetrazi{
+	margin-top:2%;
+	position:relative;
+	padding:8px 15px;
+	border: 3px solid #E2DD91;
+	color:black;
+	background-color:white;
+	font-family: verdana, sans-serif;
+	width: 23%;
+	cursor:pointer;
+	float:right;
+	font-size:14px;
+	height:35px;
+}
+#csvDownload, #pdfDownload{
+	position:relative;
+	margin-right:1%;
+	padding:8px 15px;
+	border: 3px solid #E2DD91;
+	color:black;
+	background-color:white;
+	font-family: verdana, sans-serif;
+	width: 15%;
+	cursor:pointer;
+	margin-left:1%;
+	font-size:14px;
+	height:35px;
+}
+#dugmetrazi:hover, #dugmelogin:hover, #pdfDownload:hover, #csvDownload:hover, #dugmelogout:hover{
+	background-color:#E2DD91;
+	opacity:0.99;
+}
+#loginIcon, #passicon{
+	width:7%;
+	height:auto;
+	float:left;
+	margin-top:-1%;
+	margin-left:-2%;
+}
+#searchIcon {
+	width:7%;
+	height:auto;
+	float:left;
+	margin-top:1%;
+	margin-left:-2%;
+}
+
+table {
+    font-family: verdana, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#E2DD91;
+	height:auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #7F3C05;
+	opacity:0.98;
+}
+
