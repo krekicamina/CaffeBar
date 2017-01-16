@@ -16,6 +16,7 @@ Izvještaj, odnosno screenshotovi na kojima se vidi testiranje web servisa koris
 login podaci: 
 admin ----> username: amina
 		password:amina123
+
 2. Šta nije urađeno?
 Nije napravljen hosting stranice na OpenShift.
 3. Bugovi koje ste primjetili, ali niste stigli ispraviti, a znate rješenja (opis rješenja)?
