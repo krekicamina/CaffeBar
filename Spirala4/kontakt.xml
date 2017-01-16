@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<document>
+
+<podaci>
+	<ime>Tima</ime>
+	<email>tmacic1@etf.unsa.ba</email>
+	<poruka>Neka porukaaaa ;)</poruka>
+</podaci>
+
+<podaci>
+	<ime>Hari</ime>
+	<email>harisimsirovic12@gmail.com</email>
+	<poruka>Sretna Nova godinaaaaaa &lt;3</poruka>
+</podaci>
+	
+<podaci>
+	<ime>Adna</ime>
+	<email>atahic1@etf.unsa.ba</email>
+	<poruka>Plan B</poruka>
+</podaci>
+<podaci>
+	<ime>Edna</ime>
+	<email>ednamesic@gmail.com</email>
+	<poruka>&lt;3 weee &lt;3</poruka>
+</podaci>
+<podaci>
+<ime>Amina</ime>
+<email>aspahic3@etf.unsa.ba</email>
+<poruka>Spirala 3</poruka>
+</podaci>
+</document>

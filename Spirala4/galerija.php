@@ -1,0 +1,109 @@
+<?php
+	session_start();
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Caffe Bar</title>
+		
+	</head>
+	
+	<body>
+	<script type="text/javascript" src="kod.js"></script>
+		<div class="red" id="pozadina">
+			<ul class="header" id="mytopnav">
+				<li><a class="podstranica" href="pocetna.php">O nama</a> </li>
+				<li><a class="podstranica" href="aktuelno.php">Aktuelno</a> </li>
+				<li><a class="podstranica" href="ponuda.php" onclick="showSlides('1')">Ponuda</a> </li>
+				<li><a class="active" href="galerija.php">Galerija</a></li>	        
+				<li><a class="podstranica" href="kontakt.php">Kontakt</a></li>
+				<li class="ikonica">
+					<a href="javascript:void(0);" style="font-size:70px;" onclick="dropDownFunkcija()">☰</a>
+				</li>
+			</ul>
+		</div>
+		
+		<p class="quote">“Once you wake up and smell the coffee, it's hard to go back to sleep.” </p> 
+		<h1> Ponedjeljak, 31.10.2016 - Halloween Party </h1>
+		<div class="red">
+			
+			<div class="kolona jedan" style="background-color:inherit"> 
+				<a target="_blank" href="halloween0.jpg">
+					<img src="halloween0.jpg" alt="halloween0" id="halloween0" width="281" height="200">
+				</a>
+			</div>
+			
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="halloween1.jpg">
+					<img src="halloween1.jpg" alt="halloween1" id="halloween1" width="281" height="200"> 
+				</a>
+			</div>
+		
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="halloween2.jpg">
+					<img src="halloween2.jpg" alt="halloween2" id="halloween2" width="281" height="200">
+				</a>
+			</div>
+		
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="halloween3.jpg">
+					<img src="halloween3.jpg" alt="halloween3" id="halloween3" width="281" height="200">
+				</a>
+			</div>
+			
+		</div>
+		
+		<h1><br>Petak 28.10.2016 - Party</h2>
+		
+		<div class="red" id="drugired">
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="halloween4.jpg">
+					<img src="halloween4.jpg" alt="halloween4" id="halloween4" width="281" height="200">
+				</a>
+			</div>
+		
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="halloween5.jpg">
+					<img src="halloween5.jpg" alt="halloween5" id="halloween5" width="281" height="200">
+				</a>
+			</div>
+		
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="party6.jpg">
+					<img src="party6.jpg" alt="party6" id="party6" width="281" height="200">
+				</a>
+			</div>
+		
+			<div class="kolona jedan" style="background-color:inherit">
+				<a target="_blank" href="party7.jpg">
+					<img src="party7.jpg" alt="party7" id="party7" width="281" height="200">
+				</a>
+			</div>
+			
+		</div>
+		
+		<div class="clearfix"></div>
+		
+		<div class="red" id="footer">
+			<div class="kolona jedan">
+				<h3>Radno vrijeme</h3>
+				<p>	Pon-Ned: 7:00-00:00</p>
+			</div>
+			<div class="kolona dva">
+				<h3>Adresa</h3>
+				<p>	Zmaja od Bosne bb <br>
+				 <br>
+				</p>
+			</div>
+			<div class="kolona jedan">
+				<h3>Kontakt</h3>
+				<p>📱 Mob: +387603108108<br>
+				Fiksni: +387603108108<br>
+				 </p>
+			</div>
+		</div>
+	</body>  
+</html>
