@@ -12,6 +12,7 @@ Dodano je dugme xmlUbazu, koje je vidljivo samo administratoru, i klikom na to d
 PHP skripte su prepravljene, tako da se podaci čuvaju u bazi podataka, a ne u XML fajlovima. 
 Napravljena je jedna metoda REST web servisa (GET metoda), koja vraća podatke o proizvodi koji odgovara zadanom id-u, u oblik JSON-a. Metoda je implementirana u fajlu webservis.php. Ukoliko proizvod sa unesenim id-om ne postoji u bazi, dolazi do greške, i ispisuje se poruka. 
 Izvještaj, odnosno screenshotovi na kojima se vidi testiranje web servisa koristeći POSTMAN se nalaze u folderu "Postman_izvjestaj". 
+
 login podaci: 
 admin ----> username: amina
 		password:amina123
